@@ -1,0 +1,119 @@
+/** main styling **/
+html, body, #root, input, textarea, #nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 0;
+    color: #7B7B7B;
+    box-sizing: border-box; 
+}
+
+input:active, textarea:active, input:focus, textarea:focus {
+    outline: none;
+}
+
+html, body, #root {
+    height: 100%;
+    background: #fff;
+}
+
+/** layout **/
+
+#root, #main {
+    display: flex;
+    flex-flow: column;
+}
+
+#nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+    list-style: none;
+    padding: 10px 55px;
+    margin-bottom: 25px;
+    background: #fdfdfd;
+    border-bottom: 1px solid #eee;
+}
+
+#nav ul li {
+    margin: 0 10px;
+}
+
+#main {
+    flex: 1;
+    padding: 0 50px;
+}
+
+#buttons {
+    bottom: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+/** general classes **/
+
+.shortform {
+
+}
+
+.longform {
+    flex: 1;
+}
+
+.title {
+    /* font-weight: bold; */
+    color: #000;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Playfair Display', 'Georgia', serif; 
+    transition: all 0.2s ease;
+}
+
+.title:focus {
+    color: steelblue;
+    border-bottom: 3px solid steelblue;
+    transition: all 0.2s ease;
+}
+
+.button, .navlink {
+    width: auto;
+    border: 0;
+    outline: 0;
+    background: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 50px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.button {
+    margin: 0 30px;
+}
+
+.button:hover {
+    transition: all 0.2s ease;
+    border-top: 2px solid steelblue;
+    color: steelblue;
+    border-bottom: 2px solid steelblue;
+    cursor: pointer;
+}
+
+.navlink:hover {
+    transition: all 0.2s ease;
+    color: steelblue;
+    cursor: pointer;
+}

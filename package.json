@@ -1,0 +1,11 @@
+{
+    "name": "dailypage",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "backend": "cd backend && node index.js",
+      "frontend": "cd frontend && npm start",
+      "start": "concurrently \"npm run backend\" \"npm run frontend\""
+    }
+}
+  
