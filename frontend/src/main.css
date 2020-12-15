@@ -15,7 +15,7 @@ input, textarea {
     padding: 10px;
     border: 0;
     color: #7B7B7B;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 input:active, textarea:active, input:focus, textarea:focus {
@@ -71,6 +71,17 @@ html, body, #root {
 
 .longform {
     flex: 1;
+    line-height: 140%;
+    overflow-y: scroll;
+}
+
+.longform::-webkit-scrollbar {
+    width: 5px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.longform::-webkit-scrollbar-thumb {
+    background: #aaa;
 }
 
 .title {

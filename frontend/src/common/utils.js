@@ -53,4 +53,6 @@ export const saveEntry = (values, subdir) => {
         `${now.getFullYear()}_${day}.txt`, 
         output
     );
+
+    alert("Saved entry.");
 }
